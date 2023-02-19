@@ -9,16 +9,16 @@ The dataset can be downloaded from here .
 
 The audio data folder structure is as follows:
 SARdBScene/
-- test/
-- train/
-- valid/
--	valid_urban/
--		valid_urban_1000_8.wav ... continued for other audio files in the data split
--	valid_nature/
--	valid_office/
--	valid_home/
--	valid_urban_1000_8.txt
--	valid_urban_1000_8.jams ... continued .txt and .jams files for remaining audio files in data split
+|- test/
+|- train/
+|- valid/
+| |-	valid_urban/
+| | |-		valid_urban_1000_8.wav ... continued for other audio files in the data split
+| |-	valid_nature/
+| |-	valid_office/
+| |-	valid_home/
+| |-	valid_urban_1000_8.txt
+| |-	valid_urban_1000_8.jams ... continued .txt and .jams files for remaining audio files in data split
 – SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class
 – file name: ‘split_scene_filenumber_sourcecount.wav’ for {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
 – .txt and .jams files are the files produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
@@ -42,11 +42,12 @@ where ‘test_IS1009b_0030_0040’ corresponds with AMI meeting ‘IS1009b’ fo
 The baseline system for audio source counting presented in ICASSP2023 paper follows a ResNet architecture using log mel spectrogram as input features.
 
 Files for baseline (feature extraction and ResNet models)
-- sardbscene_feature_extraction.py
-— - file for generating mel spectrogram features for the dataset. organized according to the data split (train/valid/test) and scene class
+ 
+sardbscene_feature_extraction.py
+- file for generating mel spectrogram features for the dataset. organized according to the data split (train/valid/test) and scene class
 
-- SARdBScene_baseline.pynb
-- - notebook performing model training and evaluation for audio source counting and speaker counting in the different scenes.
+SARdBScene_baseline.pynb
+- notebook performing model training and evaluation for audio source counting and speaker counting in the different scenes.
 
 
 Folder ‘SARdBScene_features’ containing features and labels from running sardbscene_feature_extraction.py:
