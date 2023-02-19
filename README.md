@@ -9,18 +9,16 @@ The dataset can be downloaded from here .
 
 The audio data folder structure is as follows:
 SARdBScene/
-	->test/
-	->train/
-	->valid/
-		->valid_urban/
-			-> valid_urban_1000_8.wav
-			… continued for other audio files in the data split
-		->valid_nature/
-		->valid_office/
-		->valid_home/
-		->valid_urban_1000_8.txt
-		->valid_urban_1000_8.jams
-		….continued .txt and .jams files for remaining audio files in data split
+- test/
+- train/
+- valid/
+-	valid_urban/
+-		valid_urban_1000_8.wav ... continued for other audio files in the data split
+-	valid_nature/
+-	valid_office/
+-	valid_home/
+-	valid_urban_1000_8.txt
+-	valid_urban_1000_8.jams ... continued .txt and .jams files for remaining audio files in data split
 – SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class
 – file name: ‘split_scene_filenumber_sourcecount.wav’ for {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
 – .txt and .jams files are the files produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
@@ -28,9 +26,11 @@ SARdBScene/
 ## Data Annotation files
 Folder SARdBScene_annotations
 {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
+
 — ‘split_scene.csv’ files contain the SARdBScene filename, original source files used in data mixing process, scene class, sound event classes, source counts, speaker counts, and sound effects counts.
 
 Speech centric annotations: making use of these requires some extra steps to cross-reference the speaker recordings with the final SARdBScene mixtures. Using the ‘split_scene.csv’ files to determine what speaker recording is in each SARdBScene mixture since we didn’t update the file naming 
+
 - testAMI.rttm, validAMI.rttm, and trainAMI.rttm files correspond to speaker annotation (typical format for speaker diarization); audio segment naming corresponds with the meeting ID names from the AMI corpus and the 10 s time boundary in seconds (ex. first row of ‘testAMI.rttm’ is:
 SPEAKER test_IS1009b_0030_0040 1 37.32 0.47 <NA> <NA> A <NA> <NA>
 where ‘test_IS1009b_0030_0040’ corresponds with AMI meeting ‘IS1009b’ for the 30-40 s interval; the third last column indicates a speaker ID ‘A’; columns 4 and 5 indicate a segment of speaker ‘A’ starting at 37.32 s for 0.47s duration. This corresponds with the original AMI corpus meeting recordings, column 4 can be normalized for the segment interval (i.e. in this case for the 10 s interval from 30-40 s (normalized as 0-10 s) the speaker A start time of 37.32 s would normalize to 7.32 s)
