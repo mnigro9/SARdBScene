@@ -57,7 +57,9 @@ the corresponding label files and spectrogram files are in order following the �
 - split_scene_sc_labels.npy contains the overall source counting labels (speech and non-speech sound types, speech is treated as a singular class regardless of the number of speakers)
 
 # Citing
-If using the SARdBScene dataset or any of this repository please cite our paper: M. Nigro and S. Krishnan, “SARdBScene: Dataset and ResNet
+If using the SARdBScene dataset or any of this repository please cite our paper:
+
+M. Nigro and S. Krishnan, “SARdBScene: Dataset and ResNet
 Baseline for Audio Scene Source Counting and Analysis,” in
 ICASSP 2023 - 2023 IEEE International Conference on Acous-
 tics, Speech and Signal Processing (ICASSP), 2023 (forthcom-
@@ -66,10 +68,17 @@ ing).
 As well, be sure to consider the references provided below since SARdBScene makes use of these works and materials.
 
 # References
+
 [1] Justin Salamon, Duncan MacConnell, Mark Cartwright, Peter Li, and Juan Pablo Bello, “Scaper: A library for soundscape synthesis and augmentation,” in 2017 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA). Oct. 2017, pp. 344–348, IEEE.
+
 [2] Frederic Font, Gerard Roma, and Xavier Serra, “Freesound technical demo,” in Proceedings of the 21st ACM international conference on Multimedia, New York, NY, USA, Oct. 2013, MM ’13, pp. 411–412, ACM.
+
 [3] Nicolas Turpault, Romain Serizel, Justin Salamon, and Ankit Parag Shah, “Sound Event Detection in Domestic Environments with Weakly Labeled Data and Soundscape Synthesis,” in Proceedings of the Detection and Classification of Acoustic Scenes and Events 2019 Workshop (DCASE2019). 2019, pp. 253–257, New York University.
+
 [4] Romain Serizel, Nicolas Turpault, Ankit Shah, and Justin Salamon, “Sound Event Detection in Synthetic Domestic Environments,” in ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). May 2020, pp. 86–90, IEEE.
+
 [5] Justin Salamon; Christopher Jacoby; Juan Pablo Bello, “A Dataset and Taxonomy for Urban Sound Research,” in Proceedings of the 22nd ACM International Conference on Multimedia, 2014, pp. 1041–1044.
+
 [6] Jean Carletta, “Unleashing the killer corpus: experiences in creating the multi-everything AMI Meeting Corpus,” Language Resources and Evaluation, vol. 41, no. 2, pp. 181–190, Nov. 2007.
+
 [7] Karol J. Piczak, “ESC: Dataset for Environmental Sound Classification,” in Proceedings of the 23rd ACM international conference on Multimedia, New York, NY, USA, Oct. 2015, pp. 1015–1018, ACM.
