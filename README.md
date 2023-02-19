@@ -1,5 +1,7 @@
 # Signal Analysis Research group's database of Source Counting and audio ENvironment Evaluation (SARdBScene) 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 The audio scene analysis dataset SARdBScene is developed for audio source counting research as well as for other audio-based tasks for comprehensive audio SARdBScene is developed to promote research for audio source counting and present a comprehensive audio scene analysis dataset that covers a variety of scenarios and audio-based tasks. It contains 80 hours of synthetic audio scene mixtures depicting four distinct environments/scenes (office, home, nature, and urban) with detailed annotations that make it a unique collection of curated data in the audio analysis landscape.
 The dataset can be used for audio source counting tasks mainly, but also for acoustic scene classification, sound event classification/detection, and speaker diarization.
 
