@@ -8,7 +8,9 @@ The dataset can be used for audio source counting tasks mainly, but also for aco
 The dataset can be downloaded from here .
 
 – SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class as well as .txt and .jams files that are produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
+
 – file name: ‘split_scene_filenumber_sourcecount.wav’ for {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
+
 
 ## Data Annotation files
 Folder SARdBScene_annotations
@@ -40,8 +42,11 @@ SARdBScene_baseline.pynb
 Folder ‘SARdBScene_features’ containing features and labels from running sardbscene_feature_extraction.py:
 the corresponding label files and spectrogram files are in order following the ‘SARdBScene_annotations’ order; keep this in mind before any shuffling of the data
 - split_scene_melspec.npy files contain log mel spectrograms for the corresponding data split and acoustic scene; data used in baseline results
+ 
 - split_scene_sfxc_labels.npy contains source counting labels for sound effects (every sound type but speech) as sound effect counting
+ 
 - split_scene_spkc_labels.npy contains speaker counting labels
+ 
 - split_scene_sc_labels.npy contains the overall source counting labels (speech and non-speech sound types, speech is treated as a singular class regardless of the number of speakers)
 
 # Citing
