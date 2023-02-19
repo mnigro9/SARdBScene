@@ -15,10 +15,10 @@ The dataset can be downloaded from here .
 
 
 ## Data Annotation files
-Folder SARdBScene_annotations
-{‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
+Folder SARdBScene_annotations: the main source for labels
 
-— ‘split_scene.csv’ files contain the SARdBScene filename, original source files used in data mixing process, scene class, sound event classes, source counts, speaker counts, and sound effects counts.
+
+— ‘split_scene.csv’ files contain the SARdBScene filename, original source files used in data mixing process, scene class, sound event classes, source counts, speaker counts, and sound effects counts. {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
 
 Speech centric annotations: making use of these requires some extra steps to cross-reference the speaker recordings with the final SARdBScene mixtures. Using the ‘split_scene.csv’ files to determine what speaker recording is in each SARdBScene mixture since we didn’t update the file naming 
 
@@ -40,16 +40,6 @@ sardbscene_feature_extraction.py
 SARdBScene_baseline.pynb
 - notebook performing model training and evaluation for audio source counting and speaker counting in the different scenes.
 
-
-Folder ‘SARdBScene_features’ containing features and labels from running sardbscene_feature_extraction.py:
-the corresponding label files and spectrogram files are in order following the ‘SARdBScene_annotations’ order; keep this in mind before any shuffling of the data
-- split_scene_melspec.npy files contain log mel spectrograms for the corresponding data split and acoustic scene; data used in baseline results
- 
-- split_scene_sfxc_labels.npy contains source counting labels for sound effects (every sound type but speech) as sound effect counting
- 
-- split_scene_spkc_labels.npy contains speaker counting labels
- 
-- split_scene_sc_labels.npy contains the overall source counting labels (speech and non-speech sound types, speech is treated as a singular class regardless of the number of speakers)
 
 # Citing
 If using the SARdBScene dataset or any of this repository please cite our paper:
