@@ -9,16 +9,17 @@ The dataset can be downloaded from here .
 
 The audio data folder structure is as follows:
 SARdBScene/
-|- test/
-|- train/
-|- valid/
-| |-	valid_urban/
-| | |-		valid_urban_1000_8.wav ... continued for other audio files in the data split
-| |-	valid_nature/
-| |-	valid_office/
-| |-	valid_home/
-| |-	valid_urban_1000_8.txt
-| |-	valid_urban_1000_8.jams ... continued .txt and .jams files for remaining audio files in data split
+├── test/
+├── train/
+├── valid/
+│   ├── valid_urban/
+│   │   ├── valid_urban_1000_8.wav ... 
+│   ├── valid_nature/
+│   ├── valid_office/
+│   ├── valid_home/
+│   ├── valid_urban_1000_8.txt ...
+│   ├── valid_urban_1000_8.jams ... 
+
 – SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class
 – file name: ‘split_scene_filenumber_sourcecount.wav’ for {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
 – .txt and .jams files are the files produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
