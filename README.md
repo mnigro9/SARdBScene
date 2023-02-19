@@ -7,9 +7,9 @@ The dataset can be used for audio source counting tasks mainly, but also for aco
 
 The dataset can be downloaded from here .
 
-– SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class as well as .txt and .jams files that are produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
+* SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class as well as .txt and .jams files that are produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
 
-– file name: ‘split_scene_filenumber_sourcecount.wav’ for {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
+* file name: ‘split_scene_filenumber_sourcecount.wav’ for {‘split’: ’train’, ‘valid’, ’test’}	{‘scene’: ‘office’, ‘home’, ‘urban’, ‘nature’}
 
 
 ## Data Annotation files
