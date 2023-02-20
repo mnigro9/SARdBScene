@@ -52,6 +52,16 @@ SARdBScene_baseline.pynb
 - notebook performing model training and evaluation for audio source counting and speaker counting in the different scenes.
 
 
+# Additional Files for making the audio mixtures (requires separate download of isolated source sounds obtained from references)
+
+sardbscene_speech_data_creation.py
+* file for preprocessing AMI speech corpus into 10 s chunks and acquiring annotations of speech for speaker diarization, speaker counting, and transcribed text
+
+sardbscene_scaper_make_scenes.py
+* file for using scaper library to create sound effect soundscapes and overall SARdBScene data with annotations. Includes parts for combining speech components with sound effect soundscapes.
+
+
+
 # Citing
 If using the SARdBScene dataset or any of this repository please cite our paper:
 
