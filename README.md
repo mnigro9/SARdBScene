@@ -18,7 +18,7 @@ ing).
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7655216.svg)](https://doi.org/10.5281/zenodo.7655216)
 
-The dataset can be downloaded from here .
+The dataset can be downloaded from here https://doi.org/10.5281/zenodo.7655216.
 
 * SARdBScene folder contains all the audio mixtures for the dataset organized by data split partition and acoustic scene class as well as .txt and .jams files that are produced by Scaper [1] when making audio mixtures. Note they do not contain annotations of the ‘speech’ sound event.
 
