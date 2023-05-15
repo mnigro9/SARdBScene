@@ -7,12 +7,7 @@ The audio scene analysis dataset SARdBScene is developed for audio source counti
 The dataset can be used for audio source counting tasks mainly, but also for acoustic scene classification, sound event classification/detection, speaker diarization, among other audio analysis tasks. Also, the dataset can be used as a whole or as subsets for scene-specific analysis of the 4 scenes designed.
 
 Please see the paper for further details.
-
-M. Nigro and S. Krishnan, “SARdBScene: Dataset and ResNet
-Baseline for Audio Scene Source Counting and Analysis,” in
-ICASSP 2023 - 2023 IEEE International Conference on Acous-
-tics, Speech and Signal Processing (ICASSP), 2023 (forthcom-
-ing).
+M. Nigro and S. Krishnan, "SARdBScene: Dataset and Resnet Baseline for Audio Scene Source Counting and Analysis," ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Rhodes Island, Greece, 2023, pp. 1-5, doi: 10.1109/ICASSP49357.2023.10097115.
 
 # Download
 
@@ -65,11 +60,7 @@ sardbscene_scaper_make_scenes.py
 # Citing
 If using the SARdBScene dataset or any of this repository please cite our paper:
 
-M. Nigro and S. Krishnan, “SARdBScene: Dataset and ResNet
-Baseline for Audio Scene Source Counting and Analysis,” in
-ICASSP 2023 - 2023 IEEE International Conference on Acous-
-tics, Speech and Signal Processing (ICASSP), 2023 (forthcom-
-ing).
+M. Nigro and S. Krishnan, "SARdBScene: Dataset and Resnet Baseline for Audio Scene Source Counting and Analysis," ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Rhodes Island, Greece, 2023, pp. 1-5, doi: 10.1109/ICASSP49357.2023.10097115.
 
 As well, be sure to consider the references provided below since SARdBScene makes use of these works and materials.
 
